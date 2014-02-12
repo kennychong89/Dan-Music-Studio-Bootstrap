@@ -1,4 +1,4 @@
-# Dan's Music Studio (Built Using Bootstrap 3.0)
+# Dan's Music Studio 
 
 ## Update 2/12/2014
 
