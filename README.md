@@ -11,6 +11,9 @@
 1. Created two drafts of the site
 2. Updated images
 
+## Update 2/19/2013
+1. Created a third draft
+
 Tasks
 
 1. Work 'Cool Stuff' area
