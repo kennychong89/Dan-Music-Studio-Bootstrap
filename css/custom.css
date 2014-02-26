@@ -1,159 +1,123 @@
-@import url("bootstrap.min.css")
-@import url("bootstrap-theme.css");
-
-@font-face { 
-	font-family: 'nevis-Bold'; 
-	src: url('../fonts/nevis/nevis-Bold.eot?') format('eot'), 
-	     url('../fonts/nevis/nevis-Bold.woff') format('woff'), 
-	     url('../fonts/nevis/nevis-Bold.ttf') format('truetype'), 
-	     url('../fonts/nevis/nevis-Bold.svg#nevis-Bold') format('svg'); 
-
-	font-weight: normal;
-	font-style: normal;
-}
-/* Sticky footer style */
-html, body {
-	height: 100%;
-}
-
-/* Wrapper for page content to push down footer */
-#wrap {
-	min-height: 100%;
-  	height: auto !important;
-  	height: 100%;
-  	
-  	/* Negative indent footer by its height */
-  	margin: 0 auto -60px;
-  	/* Pad bottom by footer height */
-  	padding: 0 0 60px;
-}
-
-h1, h2, h3, h4, h5, h6, li, button, .navbar-brand {
-	font-family: 'nevis-Bold';
+h1, h2, h3, h4, h5, h6, button, a {
+	font-family: 'Gudea', Verdana, Helvetica, sans-serif;
 }
 
 p {
-	font-family: 'Times New Roman';
+	font-family: 'Lora', Georgia, serif; 
+	font-size: 18px;
+	font-weight: 400; 
 }
 
-body {
-	background: url('./exclusive_paper/exclusive_paper.png') repeat 0 0;
+header {
+	background-color: #FFFFFF;
 }
 
-.jumbotron {
-	margin-top: 55px;
-	/* background-color: rgb(44, 62, 80); */
-	height: 375px;
-	background-image: url('../images/pianokey.jpg');
-	-webkit-background-size: 100% auto;
-	-moz-background-size: 100% auto;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.jumbotron .wrapper {
-	position: absolute;
-	top: 0;
-	right: 0;
-
-	width: 450px;
-	height: 150px;
-	padding: 20px;
-
-	color: #FFF;
-	background: #333;
-	background-color: rgba(0, 0, 0, .70);
-
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
-}
-
-.jumbotron h1 {
-	font-size: 1.5em;
-}
-
-.jumbotron p {
-	font-size: 1.2em;
-}
-
-.jumbotron .btn {
-	padding: 0.5em;
-}
-
-.navbar {
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-#about, #instructor-info, #events, #contact {
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-#about {
-	margin-top: -30px; 
-	/* background-color: rgba(41, 128, 185,1.0); */
-}
-
-#instructor-info {
-	/* background-color: rgba(46, 204, 113,1.0); */
-}
-
-#events {
-	/* background-color: rgba(44, 62, 80,1.0); */
-}
-
-#contact {
-	/* background-color: rgba(22, 160, 133,1.0); */
-}
-
-#events li {
-	/* color: #ffffff; */
-}
-
-.heading {
-	/* color: #ffffff; */
-	margin-bottom: 25px;
-}
-
-#about p {
-	/* color: #ffffff; */
-	font-size: 1.3em;
-}
-
-#instructor-info h3 {
-	/* color: #ffffff; */
+header h1 {
+	font-size: 36px;
+	font-weight: 400;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .centered {
 	text-align: center;
 }
 
-.list-social-icons {
-	margin-bottom: 45px;
+.content-heading {
+	color: rgb(41, 128, 185);
+	margin-top: 50px;
+}
+			
+.navbar-nav {
+	font-size: 17px;
+	font-weight: 400;
 }
 
-.tooltip-social a {
-	text-decoration: none;
-	color: inherit;
+.navbar-nav li {
+	/* breathing space for a links */
+	padding-right: 3px;
+	padding-left: 3px;
 }
 
-.facebook-link a:hover {
-	color: #3b5998;
+
+.jumbotron {	
+	background-image: url('../images/stockphotos/pianokey.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 375px;
+	margin-top: -25px;
+	border-bottom: 3px solid rgb(0, 140, 186);
 }
 
-.twitter-link a:hover {
-	color: #39a9e0;
+.jumbotron .msg {
+	color: #FFFFFF;
+	-moz-box-shadow: 1px 1px 6px rgba(0,0,0,.5);	
+	-webkit-box-shadow: 1px 1px 6px rgba(0,0,0,.5);
+	box-shadow: 1px 1px 6px rgba(0,0,0,.5);
+	
+	background: rgba(0,0,0,.70);
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
-.google-plus-link a:hover {
-	color: #d14836;
+.map {
+	margin-top: 10px;
 }
 
-/* Set the fixed height of the footer here */
-#footer {
-	padding-top: 40px;
-	padding-bottom: 40px;
-  	height: 140px;
-  	background-color: #2f2f2f;
-  	color: #fff;
+.bio {
+	display: none;
+}
+
+.popover p {
+	font-size: 16px;
+}
+
+/*footer styling*/
+.three_cols {
+	overflow: hidden;
+}
+
+.three_cols>li {
+	float: left;
+	width: 33.333%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+}
+
+#footer-widgets {
+	background-color: rgb(51, 51, 51);
+	color: rgb(255, 255, 255);
+	border-top: 3px solid rgb(0, 140, 186);
+	margin-top: 50px;
+}
+
+#footer-widgets p {
+	font-size: 14px;
+	padding-right: 20px;
+	text-align: left;
+}
+
+.who-header, .what-header, .connect-header {
+	padding: 10px 5px;
+}
+
+.who-header {
+	background-color: rgb(46, 204, 113);
+}
+
+.what-header {
+	background-color: rgb(52, 152, 219);
+}
+
+.connect-header {
+	background-color: rgb(22, 160, 133);
+}
+
+.tab-pane {
+	height: 420px;
+	overflow: auto;
 }

@@ -1,0 +1,25 @@
+<VIDEOS>
+	<VIDEO_ITEM name="video1">
+		<URL>http://www.youtube.com/watch?v=aOl4oeHZnBk</URL>
+		<TITLE>'I Believe In Miracles' By Hot Chocolate</TITLE>
+		<DESCRIPTION>
+			Singing to 'I Believe In Miracles' By Hot Chocolate.
+		</DESCRIPTION>
+	</VIDEO_ITEM>
+
+	<VIDEO_ITEM name="video2">
+		<URL>http://www.youtube.com/watch?v=jofNR_WkoCE</URL>
+		<TITLE>What Did The Fox Say?</TITLE>
+		<DESCRIPTION>
+			Yvelis
+		</DESCRIPTION>
+	</VIDEO_ITEM>
+
+	<VIDEO_ITEM name="video3">
+		<URL>http://www.youtube.com/watch?v=vIu85WQTPRc</URL>
+		<TITLE>Gozilla</TITLE>
+		<DESCRIPTION>
+			Movie Trailer
+		</DESCRIPTION>
+	</VIDEO_ITEM>
+</VIDEOS>
