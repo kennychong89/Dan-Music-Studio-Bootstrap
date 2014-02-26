@@ -1,0 +1,42 @@
+/* Custom CSS for carousel */
+body {
+	margin:  50px 0;
+}
+.well { background-color: #fff; }
+
+.carousel .item {
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -ms-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+}
+
+.carousel {
+	height: 400px;
+	overflow: hidden;
+}
+
+.carousel-inner > .item > img {
+	/*
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	*/	
+}
+
+.testone {
+	/*background-color: rgba(52, 152, 219,1.0);*/
+}
+
+.carousel .active.left, .carousel .active.right {
+        left:0;
+        opacity:0;
+        z-index:2;
+}
+
+.carousel .next, .carousel .prev {
+        left:0;
+        opacity:1;
+        z-index:1;
+}

@@ -1,0 +1,123 @@
+h1, h2, h3, h4, h5, h6, button, a {
+	font-family: 'Gudea', Verdana, Helvetica, sans-serif;
+}
+
+p {
+	font-family: 'Lora', Georgia, serif; 
+	font-size: 18px;
+	font-weight: 400; 
+}
+
+header {
+	background-color: #FFFFFF;
+}
+
+header h1 {
+	font-size: 36px;
+	font-weight: 400;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.content-heading {
+	color: rgb(41, 128, 185);
+	margin-top: 50px;
+}
+			
+.navbar-nav {
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.navbar-nav li {
+	/* breathing space for a links */
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+
+.jumbotron {	
+	background-image: url('../images/stockphotos/pianokey.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 375px;
+	margin-top: -25px;
+	border-bottom: 3px solid rgb(0, 140, 186);
+}
+
+.jumbotron .msg {
+	color: #FFFFFF;
+	-moz-box-shadow: 1px 1px 6px rgba(0,0,0,.5);	
+	-webkit-box-shadow: 1px 1px 6px rgba(0,0,0,.5);
+	box-shadow: 1px 1px 6px rgba(0,0,0,.5);
+	
+	background: rgba(0,0,0,.70);
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.map {
+	margin-top: 10px;
+}
+
+.bio {
+	display: none;
+}
+
+.popover p {
+	font-size: 16px;
+}
+
+/*footer styling*/
+.three_cols {
+	overflow: hidden;
+}
+
+.three_cols>li {
+	float: left;
+	width: 33.333%;
+	padding-bottom: 2px;
+	padding-top: 1px;
+}
+
+#footer-widgets {
+	background-color: rgb(51, 51, 51);
+	color: rgb(255, 255, 255);
+	border-top: 3px solid rgb(0, 140, 186);
+	margin-top: 50px;
+}
+
+#footer-widgets p {
+	font-size: 14px;
+	padding-right: 20px;
+	text-align: left;
+}
+
+.who-header, .what-header, .connect-header {
+	padding: 10px 5px;
+}
+
+.who-header {
+	background-color: rgb(46, 204, 113);
+}
+
+.what-header {
+	background-color: rgb(52, 152, 219);
+}
+
+.connect-header {
+	background-color: rgb(22, 160, 133);
+}
+
+.tab-pane {
+	height: 420px;
+	overflow: auto;
+}

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width" initial-scale="1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Dan's Music Studio</title>
+
+		<!--Google Fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Rancho" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Gudea" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+
+		<!-- Bootstrap core -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom css here -->	
+		<!--<link href="css/custom.css" rel="stylesheet">-->
+
+		<!-- Font Awesome -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+		<style>
+			h1 {
+ 				font: 400 46px/1.1 'Rancho', Georgia, serif;
+			}
+ 
+ 			#header-title {
+ 				padding-top: 10px;
+ 				padding-bottom: 10px;
+ 			}
+
+ 			.navbar-brand {
+				font: 400 36px/1.1 'Rancho', Georgia, serif;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			p {
+  				font: 400 16px/1.6 'Lora', Georgia, serif;
+			}
+
+			h2, h3, h4, h5, h6, button {
+				font-family: 'Gudea', Verdana, Helvetica, sans-serif;
+			}
+
+			.navbar-nav {
+				font: 400 17px/1.6 'Gudea', Verdana, Helvetica, sans-serif;
+			}
+
+			.navbar-nav li {
+				/* breathing space for a links */
+				padding-right: 3px;
+				padding-left: 3px;
+			}
+
+			.jumbotron {
+				
+				background-image: url('images/stockphotos/pianokey_4.jpg');
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: left;
+			}
+			
+			.jumbotron .msg {
+				color: #FFFFFF;
+				-moz-box-shadow: 1px 1px 6px rgba(0,0,0,.5);	
+				-webkit-box-shadow: 1px 1px 6px rgba(0,0,0,.5);
+				box-shadow: 1px 1px 6px rgba(0,0,0,.5);
+	
+				background: rgba(0,0,0,.70);
+
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+
+			.register {
+
+				background: rgba(0,0,0,.70);
+
+				padding-top: 2px;
+				padding-bottom: 2px;
+			
+				text-align: center;
+
+				margin-top: -20px;
+			}
+
+			.register h3 {
+				color: #FFFFFF;
+			}
+
+			.register a {
+				margin-left: 10px;
+			}
+
+			.three_cols {
+				overflow: hidden;
+			}
+
+			.three_cols>li {
+				float: left;
+				width: 33.333%;
+				padding-bottom: 2px;
+				padding-top: 1px;
+			}
+
+			#footer-widgets {
+				background-color: rgb(51, 51, 51);
+				color: rgb(255, 255, 255);
+				border-top: 3px solid rgb(0, 140, 186);
+				margin-top: 50px;
+			}
+
+			#footer-widgets p {
+				font-size: 14px;
+				padding-right: 20px;
+				text-align: left;
+			}
+
+			.who-header, .what-header, .connect-header {
+				padding: 10px 5px;
+			}
+
+			.who-header {
+				background-color: rgb(46, 204, 113);
+			}
+
+			.what-header {
+				background-color: rgb(52, 152, 219);
+			}
+
+			.connect-header {
+				background-color: rgb(22, 160, 133);
+			}
+
+			#content {
+				margin-left: -15px;
+
+			}
+
+			.centered {
+				text-align: center;
+			}
+
+			.content-heading {
+				color: rgb(41, 128, 185);
+				margin-top: 50px;
+			}
+
+			.align-left {
+				float: left;
+				margin-right:15px;
+				margin-bottom:10px;
+				margin-top:5px
+			}
+
+			.no-margin-top {
+				margin-top:0 !important
+			}
+
+			.para-padding {
+				margin-left: 10px;
+			}
+
+			.social {
+				padding-left: 20px;
+			}
+
+			.mini-border {
+				border-left: 1px solid rgb(0, 140, 186);
+			}
+
+			.hours {
+				text-decoration: none;
+			}
+
+			.map {
+				margin-top: 10px;
+			}
+
+			.tab-content {
+				padding:15px;
+				border-left:solid 1px #ddd;
+				border-right:solid 1px #ddd;
+				border-bottom:solid 1px #ddd;
+				overflow:hidden;
+			}
+
+			.tab-column {
+				height: 100%;
+			}
+
+			.bio {
+				display: none;
+			}
+		</style>
+	</head>
+
+<body>
+	<div class="container">
+		<!-- PAGE HEADER -->			
+			<header id="header" class="hidden-xs">
+				<div class="container">
+					<div id="header-title">
+						<h1><a href="index2.html">Dan's Music Studio</a></h1>
+					</div>
+				</div>
+			</header>
+		<!-- END OF PAGE HEADER -->
+
+		<nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+			<div class="container">
+					<!-- NAVBAR HEADER -->
+					<div class="navbar-header">
+						<a class="navbar-brand visible-xs" href="index2.html">Dan's Music Studio</a> 
+						
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+            					<i class="fa fa-bars fa-inverse"></i>
+						</button>	
+					</div>
+					<!-- END OF NAVBAR HEADER --> 
+					
+					<!-- COLLAPSE -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<!-- NAVBAR NAV -->
+						<ul class="nav navbar-nav"> 
+						
+						<!-- ABOUT DROPDOWN -->
+						<li class="dropdown">
+						
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
+							
+							<ul class="dropdown-menu">
+								<li><a href="" id="missionlink">Our Mission</a></li>
+								<li><a href="" id="instrlink">Meet Our Instructors</a></li>
+							</ul>
+						</li>
+						<!-- END OF ABOUT DROPDOWN -->
+
+						<!-- SERVICES DROPDOWN -->
+						<li class="dropdown">
+							<a href="#" class="dropdowno-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+							
+							<ul class="dropdown-menu">
+								<li><a href="#">Class Enrollment</a></li>
+								<li><a href="#">Individual Lessons</a></li>
+							</ul>
+						</li>
+						<!-- END OF SERVICES DROPDOWN -->
+
+						<!-- EVENTS -->
+						<li><a href="" id="eventlink">Events</a></li>
+						<!-- END OF EVENTS -->
+
+						<!-- MEDIA DROPDOWN -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Media<b class="caret"></b></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="#">Photos</a></li>
+								<li><a href="#">Videos</a></li>
+							</ul>
+						</li>
+						<!-- END OF MEDIA DROPDOWN -->
+						
+						<!-- CONTACT -->	
+						<li><a href="" id="contactlink">Contact Us</a></li>
+						<!-- END OF CONTACT -->
+						
+						</ul> <!-- END OF NAVBAR NAV-->
+					</div> 
+					<!-- END OF COLLAPSE -->	
+			</div> <!_- END OF NAV CONTAINER -->
+		</nav>
+
+		<!-- ADVERTISE SECTION-->
+		<section id="advertise">
+
+			<!-- JUMBOTRON -->
+			<div class="jumbotron">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="msg">	
+								<h2>Welcome To Dan's Music Studio</h2>
+								<h3>Lessons Taught By Professionals</h3>
+							</div>
+
+						</div>
+						
+						<!--
+						<div class="col-md-5 hidden-xs img-responsive">
+							<img src="images/stockphotos/printed_photo.jpg" alt="girls">
+						</div>
+						-->
+					</div>
+				</div>
+			</div>
+			<!-- END OF JUMBOTRON -->
+
+			<div class="register">
+				<div class="container">
+					<h3>Register For Our Newest Classes! <a href="#" class="btn btn-md btn-success">Register</a></h3>
+				</div>
+			</div>
+		</section>
+		<!-- END OF ADVERTISE SECTIION -->
+
+		<section id="content">
+			<!-- COOL STUFF -->
+			<div class="container">
+				
+				<h2 class="centered content-heading">Cool Stuff</h2>
+				
+				<div class="row">
+					<!-- CONTENT COLUMN -->	
+					<div class="col-md-3 tab-column">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#posts" data-toggle="tab">Posts</a></li>
+								<li><a href="#photos" data-toggle="tab">Photos</a></li>
+								<li><a href="#videos" data-toggle="tab">Videos</a></li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+  								<div class="tab-pane active" id="posts">
+  									<ul>
+  										<li><a href="#">The New Dan's Music Studio Website</a></li> 
+  										<li><a href="#">Meet Lizzy, our talented violin instructor</a></li>
+  									</ul>
+  								</div>
+  								
+  								<div class="tab-pane" id="photos">
+
+  								</div>
+  								<div class="tab-pane" id="videos">
+
+  								</div>
+							</div>
+					</div>
+
+					<div class="col-md-9">
+						<img src="images/stockphotos/girls_2.jpg" alt="test">
+						<h4>The New Dan's Music Studio Website</h4>
+						<p>
+							Adipisicing elit. Lectorem impendere consumeret inane patientiamque. Cupiditatibusque romano physici. Expedire inprobitatem. Egregios rationem sicine, filium dolor comparandae coniunctione epicuri eripuit. Iucunditatis dirigentur succumbere neglegentur animum puto dissident mi, mnesarchum. Desideraret. Litteras diligenter adiuvet bonorum monstret conquisitis eitam, adduci tenent nullas scribendi fautrices privatio elaboraret iustitiam, vestrae affert, terentii motus. Quibusdam caret. Conversam divitias dolor 1contentam. Argumentandum quantaque detractis. Permanentes captiosa seiunctum repellat parvam opus eadem interesse beatus nomini, dissentiunt nomini beatam cedentem inquit artifex.
+						</p>
+					</div>
+
+				</div>
+			</div>
+			<!-- END OF COOL STUFF -->
+
+			<div class="container">	
+				<!-- ABOUT -->
+
+				<h2 class="centered content-heading">About Dan's Music Studio</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="about-who-box">
+							<h3 class="who-header">Who We Are</h3>
+
+							<p>
+								At Dan's Music Studio, we provide a warm, bright, clean, and welcoming environment for the instruction of music. All of our instructors are also working professional musicians who understand what it takes to perform at the highest level of excellence.
+							</p>
+
+
+							<a href="#" class="btn btn-md btn-info">Read Our Mission Statement</a>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<h3 class="what-header">What We Offer</h3>
+					
+						<p>
+	    					We offer lessons on most instruments and vocals to students of all ages. Piano guitar, vocal, and drum lessons are quite popular. Lessons are avaliable on most band and orchestral instruments and help to strengthen the skills of students involved in scholastic music programs.
+						</p>
+
+						<a href="#" class="btn btn-md btn-info">Check Out Our Events And Lessons</a>
+					</div>
+
+					<div class="col-md-4">
+						<h3 class="connect-header">Let's Connect!</h3>
+
+						<p>
+							Our studio is located at West Orange, New Jersey, across the West Orange Public Library. Stop by and let's chat! We have plenty of parking as well.
+						</p>
+
+						<a href="#" class="btn btn-md btn-info">Contact Dan's Music Studio</a>
+					</div>
+				</div>
+			</div>
+			<!-- END OF ABOUT -->
+
+			<!-- INSTRUCTOR -->
+			 <div class="container">
+			 		<h2 class="centered content-heading">Meet Our Instructors</h2>
+
+			 		<!-- ROW 1 -->
+			 		<div class="row centered">
+			 			<div class="col-md-3 col-xs-6">
+							<a href="#i" class="testing popoverThis" data-toggle="popover" title="Hi! I'm Gary">	
+								<img class="img-circle" src="./images/instructors/thumbnails/Gary_thumbnail.jpg" alt="Gary Scott Lewis">
+								<h3 class="name">Gary Scott Lewis</h3>
+							</a>
+							
+							<div class="bio">
+								<p> 
+			 						Hi, I am music enthusiast with a love for the guitar. I also enjoy teaching music to children. I graduated from Rutgers University with a dual degree in Music Education and Child Development.I have worked with Dan's Music Studio for 3 years now.
+			 					</p>	
+							</div>
+
+							<ul class="list-unstyled list-inline">
+			 					<li class="tooltip-social facebook-link"><a href="#facebook-page" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+			 					<li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+			 					<li class="tooltip-social google-plus-link"><a href="#google-plus-profile" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+			 					<li class="tooltip-social email-link"><a href="#email" title="email"><i class="fa fa-envelope fa-2x"></i></a>
+			 					<li class="tooltip-social phone-link"><a href="#phone" title="phone"><i class="fa fa-phone-square fa-2x"></i></a>		
+			 				</ul>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<a href="#i" class="testing popoverThis" data-toggle="popover" title="Hi! I'm Greg">
+								<img class="img-circle" src="./images/instructors/thumbnails/Greg_thumbnail.jpg" alt="Greg Dude">
+								<h3 class="name">Greg Dude</h3>
+							</a>
+							<div class="bio">
+									<p> 
+			 							Hi, I am music enthusiast with a love for the guitar. I also enjoy teaching music to children. I graduated from Rutgers University with a dual degree in Music Education and Child Development.I have worked with Dan's Music Studio for 3 years now.
+			 						</p>	
+							</div>
+
+							<ul class="list-unstyled list-inline">
+			 						<li class="tooltip-social facebook-link"><a href="#facebook-page" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+			 						<li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+			 						<li class="tooltip-social google-plus-link"><a href="#google-plus-profile" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
+			 						</li>
+			 						<li class="tooltip-social email-link"><a href="#email" title="email"><i class="fa fa-envelope fa-2x"></i></a>
+			 						<li class="tooltip-social phone-link"><a href="#phone" title="phone"><i class="fa fa-phone-square fa-2x"></i></a>		
+			 				</ul>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<a href="#i" class="testing popoverThis" data-toggle="popover" title="Hi! I'm Jay">
+								<img class="img-circle" src="./images/instructors/thumbnails/Jay_thumbnail.jpg" alt="Jay Baltimore">
+								<h3 class="name">Jay Baltimore</h3>
+							</a>
+
+							<div class="bio">
+								<p> 
+			 						Hi, I am music enthusiast with a love for the guitar. I also enjoy teaching music to children. I graduated from Rutgers University with a dual degree in Music Education and Child Development.I have worked with Dan's Music Studio for 3 years now.
+			 					</p>	
+							</div>
+
+
+							<ul class="list-unstyled list-inline">
+			 					<li class="tooltip-social facebook-link"><a href="#facebook-page" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+			 					<li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+			 					<li class="tooltip-social google-plus-link"><a href="#google-plus-profile" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+			 					<li class="tooltip-social email-link"><a href="#email" title="email"><i class="fa fa-envelope fa-2x"></i></a>
+			 					<li class="tooltip-social phone-link"><a href="#phone" title="phone"><i class="fa fa-phone-square fa-2x"></i></a>		
+			 				</ul>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<a href="#i" class="testing popoverThis" data-toggle="popover" title="Hi! I'm Liz">
+								<img class="img-circle" src="./images/instructors/thumbnails/Liz_thumbnail.jpg" alt="Liz Eps">
+								<h3 class="name">Liz Eps</h3>
+							</a>
+
+							<div class="bio">
+									<p> 
+			 							Hi, I am music enthusiast with a love for the guitar. I also enjoy teaching music to children. I graduated from Rutgers University with a dual degree in Music Education and Child Development.I have worked with Dan's Music Studio for 3 years now.
+			 						</p>	
+							</div>
+
+							<ul class="list-unstyled list-inline">
+			 					<li class="tooltip-social facebook-link"><a href="#facebook-page" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+			 					<li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+			 					<li class="tooltip-social google-plus-link"><a href="#google-plus-profile" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+			 					<li class="tooltip-social email-link"><a href="#email" title="email"><i class="fa fa-envelope fa-2x"></i></a>
+			 					<li class="tooltip-social phone-link"><a href="#phone" title="phone"><i class="fa fa-phone-square fa-2x"></i></a>		
+			 				</ul>
+						</div>
+			 		</div>
+			 </div>
+			 <!-- END OF INSTRUCTOR -->
+
+			 	<!-- CONTACT US -->
+			 	<div class="container">
+			 		<h2 class="centered content-heading">Contact Us</h2>
+
+			 		<div class="row">
+			 			<div class="col-md-8">
+			 				<h3>Leave Us A Message</h3>
+		   					<p>We will get back to you as soon as possible. We Promise!</p>
+		    				
+		    				<form role="form" method="POST" action="">
+		    					<div class="row">
+		    						<div class="form-group col-lg-6">
+		    							<label for="input1"><strong>Name</strong></label>
+		    							<input type="text" name="contact-name" class="form-control" id="input1">
+		    						</div>
+
+		    						<div class="form-group col-lg-6">
+		    							<label for="input2"><strong>Email Address</strong></label>
+		    							<input type="email" name="contact_email" class="form-control" id="input2">
+		 		    				</div>
+		 		    				<div class="clearfix"></div>
+		 		    				<div class="form-group col-lg-12">
+		 		    					<label for="input4"><strong>Message</strong></label>
+		 		    					<textarea name="contact-message" class="form-control" rows="6" id="input4"></textarea>
+		 		    				</div>
+									 		    	
+		 		    				<div class="form-group- col-lg-12">
+		 		    					<input type="hidden" name="save" value="contact">
+		 		    					<button type="submit" class="btn btn-success">Submit</button>
+		 		    				</div>
+		 		    			</div>
+		    				</form>
+			 			</div>
+
+			 			<div class="col-md-4">
+			 				<h3>Contact Information</h3>
+			 				<address>
+			 					<strong>Dan's Music Studio</strong><br>
+			 					49 Mt Pleasant Ave <br>
+								West Orange NJ, 07052 <br>
+								 <abbr title="Phone"><i class="fa fa-phone"></i></abbr>: (973) 731-1082 <br>
+								 <abbr title="Email"><i class="fa fa-envelope"></i></abbr>: <a href="mailto:dansmusicstudio@hotmail.com">dansmusicstudio@hotmail.com</a> <br>	 
+			 				</address>
+
+			 				<h3>Business Hours</h3>
+			 				<ul class="list-unstyled"> 
+								<li><strong>Monday - Friday:</strong> 8:00 AM to 5:00 PM </li>
+								<li><strong>Saturday:</strong> 9:00 AM to 7:00 PM</li>
+								<li><strong>Sunday:</strong> 10:00 AM to 3:00 PM</li>
+							</ul>
+			 			</div>
+			 		</div>	
+			 		<section>
+			 			 <div class="well well-sm map">
+			 				<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=49+Mt+Pleasant+Ave,+West+Orange,+NJ&amp;aq=0&amp;oq=49+Mt+Pleasant+Ave,+West+Orange,+NJ&amp;sll=40.697488,-73.979681&amp;sspn=0.562237,1.352692&amp;ie=UTF8&amp;hq=&amp;hnear=49+Mt+Pleasant+Ave,+West+Orange,+New+Jersey+07052&amp;t=m&amp;ll=40.793084,-74.235306&amp;spn=0.035089,0.084543&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+						  </div>
+			 		</section>
+				</div>			 
+		</section>
+
+		<aside id="footer-widgets">
+			<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<h4 class="footer-widget-title">Sitemap</h4>
+
+							<ul class="list-unstyled three_cols">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Our Mission</a></li>
+								<li><a href="#">Instructors</a></li>
+								<li><a href="#">Events</a></li>
+								<li><a href="#">Classes</a></li>
+								<li><a href="#">Photos</a></li>
+								<li><a href="#">Videos</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-4">
+							<h4 class="footer-widget-title">Follow Us On</h4>
+							<ul class="list-unstyled list-inline list-social-icons">
+					
+								<li class="tooltip-social facebook-link"><a href="#facebook-page" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+					
+								<li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+					
+								<li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-3x"></i></a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-4">
+							<h4 class="footer-widget-title">Work For Dan's Music Studio!</h4>
+								
+							<p>
+								Passionate about music? Love to teach? Enjoy being around children? Then we would love for you to be part of our team!
+							</p>
+
+							<p>
+								Give us a call at '(973) 731-1082' or E-mail us at 'dansband@gmail.com'
+							</p>
+						</div>
+					</div>
+			</div>
+		</aside>
+	</div>
+
+		<!-- Javascript stuff -->
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/holder.js"></script>
+
+		<script type="text/Javascript">
+			$(document).ready(function() {
+
+			$('[data-toggle="popover"]').popover({
+						container: 'body', 
+						placement:'auto left', 
+						content: function() {
+							return $(this).next('.bio').html();
+						},
+						trigger: 'click',
+						html:true,
+			});
+			
+			$('.popoverThis').click(function (e) {
+    			e.stopPropagation();
+			});
+
+			$(document).click(function (e) {
+    			if (($('.popover').has(e.target).length == 0) || $(e.target).is('.close')) {
+        			$('.popoverThis').popover('hide');
+        			$('.popover').remove();
+    			}
+			});
+			
+		});
+		</script>	
+</body>
