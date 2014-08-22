@@ -16,41 +16,217 @@
 		<!-- Bootstrap core -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
-		<!-- To render Video.js playlist-->
-		<link href="css/video-js.css" rel="stylesheet" type="text/css">
-
-		<!-- Custom CSS here -->	
-		<link href="css/custom.css" rel="stylesheet">
+		<!-- Custom css here -->	
+		<!--<link href="css/custom.css" rel="stylesheet">-->
 
 		<!-- Font Awesome -->
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+		<style>
+			h1 {
+ 				font: 400 46px/1.1 'Rancho', Georgia, serif;
+			}
+ 
+ 			#header-title {
+ 				padding-top: 10px;
+ 				padding-bottom: 10px;
+ 			}
+
+ 			.navbar-brand {
+				font: 400 36px/1.1 'Rancho', Georgia, serif;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			p {
+  				font: 400 16px/1.6 'Lora', Georgia, serif;
+			}
+
+			h2, h3, h4, h5, h6, button {
+				font-family: 'Gudea', Verdana, Helvetica, sans-serif;
+			}
+
+			.navbar-nav {
+				font: 400 17px/1.6 'Gudea', Verdana, Helvetica, sans-serif;
+			}
+
+			.navbar-nav li {
+				/* breathing space for a links */
+				padding-right: 3px;
+				padding-left: 3px;
+			}
+
+			.jumbotron {
+				
+				background-image: url('images/stockphotos/pianokey_4.jpg');
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: left;
+			}
+			
+			.jumbotron .msg {
+				color: #FFFFFF;
+				-moz-box-shadow: 1px 1px 6px rgba(0,0,0,.5);	
+				-webkit-box-shadow: 1px 1px 6px rgba(0,0,0,.5);
+				box-shadow: 1px 1px 6px rgba(0,0,0,.5);
+	
+				background: rgba(0,0,0,.70);
+
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+
+			.register {
+
+				background: rgba(0,0,0,.70);
+
+				padding-top: 2px;
+				padding-bottom: 2px;
+			
+				text-align: center;
+
+				margin-top: -20px;
+			}
+
+			.register h3 {
+				color: #FFFFFF;
+			}
+
+			.register a {
+				margin-left: 10px;
+			}
+
+			.three_cols {
+				overflow: hidden;
+			}
+
+			.three_cols>li {
+				float: left;
+				width: 33.333%;
+				padding-bottom: 2px;
+				padding-top: 1px;
+			}
+
+			#footer-widgets {
+				background-color: rgb(51, 51, 51);
+				color: rgb(255, 255, 255);
+				border-top: 3px solid rgb(0, 140, 186);
+				margin-top: 50px;
+			}
+
+			#footer-widgets p {
+				font-size: 14px;
+				padding-right: 20px;
+				text-align: left;
+			}
+
+			.who-header, .what-header, .connect-header {
+				padding: 10px 5px;
+			}
+
+			.who-header {
+				background-color: rgb(46, 204, 113);
+			}
+
+			.what-header {
+				background-color: rgb(52, 152, 219);
+			}
+
+			.connect-header {
+				background-color: rgb(22, 160, 133);
+			}
+
+			#content {
+				margin-left: -15px;
+
+			}
+
+			.centered {
+				text-align: center;
+			}
+
+			.content-heading {
+				color: rgb(41, 128, 185);
+				margin-top: 50px;
+			}
+
+			.align-left {
+				float: left;
+				margin-right:15px;
+				margin-bottom:10px;
+				margin-top:5px
+			}
+
+			.no-margin-top {
+				margin-top:0 !important
+			}
+
+			.para-padding {
+				margin-left: 10px;
+			}
+
+			.social {
+				padding-left: 20px;
+			}
+
+			.mini-border {
+				border-left: 1px solid rgb(0, 140, 186);
+			}
+
+			.hours {
+				text-decoration: none;
+			}
+
+			.map {
+				margin-top: 10px;
+			}
+
+			.tab-content {
+				padding:15px;
+				border-left:solid 1px #ddd;
+				border-right:solid 1px #ddd;
+				border-bottom:solid 1px #ddd;
+				overflow:hidden;
+			}
+
+			.tab-column {
+				height: 100%;
+			}
+
+			.bio {
+				display: none;
+			}
+		</style>
 	</head>
 
-	<body>
-		<!--Header title or website logo -->
-		<header class="hidden-xs">
-			<div class="container">
-				<!-- title or logo -->
-				<h1><a href="#">Dan's Music Studio</a></h1>
-			</div>
-		</header>
+<body>
+	<div class="container">
+		<!-- PAGE HEADER -->			
+			<header id="header" class="hidden-xs">
+				<div class="container">
+					<div id="header-title">
+						<h1><a href="index2.html">Dan's Music Studio</a></h1>
+					</div>
+				</div>
+			</header>
+		<!-- END OF PAGE HEADER -->
 
-		<!--Navbar and navigations -->
 		<nav class="navbar navbar-static-top navbar-inverse" role="navigation">
 			<div class="container">
-				
-				<!-- NAVBAR HEADER -->
-				<div class="navbar-header">
-					<a class="navbar-brand visible-xs" href="index2.html">Dan's Music Studio</a> 
+					<!-- NAVBAR HEADER -->
+					<div class="navbar-header">
+						<a class="navbar-brand visible-xs" href="index2.html">Dan's Music Studio</a> 
 						
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-							<span class="sr-only">Toggle navigation</span>
-            				<i class="fa fa-bars fa-inverse"></i>
-					</button>	
-				</div>
-				<!-- END OF NAVBAR HEADER -->
-
-				<!-- COLLAPSE -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+            					<i class="fa fa-bars fa-inverse"></i>
+						</button>	
+					</div>
+					<!-- END OF NAVBAR HEADER --> 
+					
+					<!-- COLLAPSE -->
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<!-- NAVBAR NAV -->
 						<ul class="nav navbar-nav"> 
@@ -99,59 +275,135 @@
 						
 						</ul> <!-- END OF NAVBAR NAV-->
 					</div> 
-					<!-- END OF COLLAPSE -->
-
-			</div>
+					<!-- END OF COLLAPSE -->	
+			</div> <!_- END OF NAV CONTAINER -->
 		</nav>
 
-		<!--Advertising and jumbotron -->
+		<!-- ADVERTISE SECTION-->
 		<section id="advertise">
+
+			<!-- JUMBOTRON -->
 			<div class="jumbotron">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6 msg">
+						<div class="col-md-6">
+							<div class="msg">	
 								<h2>Welcome To Dan's Music Studio</h2>
 								<h3>Lessons Taught By Professionals</h3>
+							</div>
+
 						</div>
+						
+						<!--
+						<div class="col-md-5 hidden-xs img-responsive">
+							<img src="images/stockphotos/printed_photo.jpg" alt="girls">
+						</div>
+						-->
+					</div>
+				</div>
+			</div>
+			<!-- END OF JUMBOTRON -->
+
+			<div class="register">
+				<div class="container">
+					<h3>Register For Our Newest Classes! <a href="#" class="btn btn-md btn-success">Register</a></h3>
 				</div>
 			</div>
 		</section>
+		<!-- END OF ADVERTISE SECTIION -->
 
-		<!--About section -->
-		<section id="about">
-			<h2 class="centered content-heading">A Little About Us</h2>
-
+		<section id="content">
+			<!-- COOL STUFF -->
 			<div class="container">
+				
+				<h2 class="centered content-heading">Cool Stuff</h2>
+				
 				<div class="row">
-					<div class="col-md-7">
+					<!-- CONTENT COLUMN -->	
+					<div class="col-md-3 tab-column">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#posts" data-toggle="tab">Posts</a></li>
+								<li><a href="#photos" data-toggle="tab">Photos</a></li>
+								<li><a href="#videos" data-toggle="tab">Videos</a></li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+  								<div class="tab-pane active" id="posts">
+  									<ul>
+  										<li><a href="#">The New Dan's Music Studio Website</a></li> 
+  										<li><a href="#">Meet Lizzy, our talented violin instructor</a></li>
+  									</ul>
+  								</div>
+  								
+  								<div class="tab-pane" id="photos">
+
+  								</div>
+  								<div class="tab-pane" id="videos">
+
+  								</div>
+							</div>
+					</div>
+
+					<div class="col-md-9">
+						<img src="images/stockphotos/girls_2.jpg" alt="test">
+						<h4>The New Dan's Music Studio Website</h4>
 						<p>
-	    					At Dan's Music Studio, we provide a warm, bright, clean, and welcoming environment for the instruction of music. All of our instructors are also working
-	    					professional musicians who understand what it takes to perform at the highest level of excellence.
-	    				</p>
+							Adipisicing elit. Lectorem impendere consumeret inane patientiamque. Cupiditatibusque romano physici. Expedire inprobitatem. Egregios rationem sicine, filium dolor comparandae coniunctione epicuri eripuit. Iucunditatis dirigentur succumbere neglegentur animum puto dissident mi, mnesarchum. Desideraret. Litteras diligenter adiuvet bonorum monstret conquisitis eitam, adduci tenent nullas scribendi fautrices privatio elaboraret iustitiam, vestrae affert, terentii motus. Quibusdam caret. Conversam divitias dolor 1contentam. Argumentandum quantaque detractis. Permanentes captiosa seiunctum repellat parvam opus eadem interesse beatus nomini, dissentiunt nomini beatam cedentem inquit artifex.
+						</p>
+					</div>
 
-	    				<p>
-	    					We offer lessons on most instruments and vocals to students of all ages. Piano guitar, vocal, and drum lessons are quite popular. Lessons are avaliable on most band and orchestral instruments and help to strengthen the skills of students involved in scholastic music programs. Additionally, we offer lessons on many 
-	    					folk instruments like fiddle, banjo, mandolin, and uklele.
-	    				</p>
-
-	    				<p>
-	    					Our studio is located at West Orange, New Jersey, across the West Orange Public Library. Stop by and let's chat! We have plenty of parking as well. 
-	    				</p>
-	    			</div>
-
-	    			<div class="col-md-5">
-	    				<img class="img-responsive" src="images/stockphotos/girls.jpg" alt="img">
-	    			</div>
 				</div>
 			</div>
-		</section>
+			<!-- END OF COOL STUFF -->
 
-		<!--Instructor section -->
-		<section id="instructors">
-			<h2 class="centered content-heading">Meet Our Talented Instructors</h2>
+			<div class="container">	
+				<!-- ABOUT -->
 
-			<div class="container">
-				<div class="row centered">
+				<h2 class="centered content-heading">About Dan's Music Studio</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="about-who-box">
+							<h3 class="who-header">Who We Are</h3>
+
+							<p>
+								At Dan's Music Studio, we provide a warm, bright, clean, and welcoming environment for the instruction of music. All of our instructors are also working professional musicians who understand what it takes to perform at the highest level of excellence.
+							</p>
+
+
+							<a href="#" class="btn btn-md btn-info">Read Our Mission Statement</a>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<h3 class="what-header">What We Offer</h3>
+					
+						<p>
+	    					We offer lessons on most instruments and vocals to students of all ages. Piano guitar, vocal, and drum lessons are quite popular. Lessons are avaliable on most band and orchestral instruments and help to strengthen the skills of students involved in scholastic music programs.
+						</p>
+
+						<a href="#" class="btn btn-md btn-info">Check Out Our Events And Lessons</a>
+					</div>
+
+					<div class="col-md-4">
+						<h3 class="connect-header">Let's Connect!</h3>
+
+						<p>
+							Our studio is located at West Orange, New Jersey, across the West Orange Public Library. Stop by and let's chat! We have plenty of parking as well.
+						</p>
+
+						<a href="#" class="btn btn-md btn-info">Contact Dan's Music Studio</a>
+					</div>
+				</div>
+			</div>
+			<!-- END OF ABOUT -->
+
+			<!-- INSTRUCTOR -->
+			 <div class="container">
+			 		<h2 class="centered content-heading">Meet Our Instructors</h2>
+
+			 		<!-- ROW 1 -->
+			 		<div class="row centered">
 			 			<div class="col-md-3 col-xs-6">
 							<a href="#i" class="testing popoverThis" data-toggle="popover" title="Hi! I'm Gary">	
 								<img class="img-circle" src="./images/instructors/thumbnails/Gary_thumbnail.jpg" alt="Gary Scott Lewis">
@@ -235,99 +487,19 @@
 			 					<li class="tooltip-social email-link"><a href="#email" title="email"><i class="fa fa-envelope fa-2x"></i></a>
 			 					<li class="tooltip-social phone-link"><a href="#phone" title="phone"><i class="fa fa-phone-square fa-2x"></i></a>		
 			 				</ul>
-					    </div>
-			 	</div>
-			</div>
-		</section>
-		
-		<!-- Media section -->
-		<section id="media">
-			<h2 class="centered content-heading">Photos And Videos</h2>
-			<div class="container">
-				<div class="col-md-5">
-					<!-- Nav tabs -->
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#videos" data-toggle="tab">Videos</a></li>
-						<li><a href="#photos" data-toggle="tab">Photos</a></li>
-					</ul>
-
-					<!-- Tab panes -->
-					<div class="tab-content">
-						<div class="tab-pane active" id="#videos">
-							
-							<div class="media">
-								<a class="pull-left load-video" href="#" name="video1"><img class="media-object" data-src="holder.js/100x100" alt="image"></a>
-								<div class="media-body">
-									 <h4 class="media-heading"><a href="#" class="load-video" name="video1">Video 1</a></h4>
-									 <p>Lorem ipsum Ex pariatur enim eu sed quis occaecat enim ex eiusmod</p>
-								</div>
-							</div>
-
-							<div class="media">
-								<a class="pull-left load-video" href="#" name="video2"><img class="media-object" data-src="holder.js/100x100" alt="image"></a>
-								<div class="media-body">
-									<h4 class="media-heading"><a href="#" class="load-video" name="video2">Video 2</a></h4>
-									 <p>Lorem ipsum Ex pariatur enim eu sed quis occaecat enim ex eiusmod</p>
-								</div>
-							</div>
-
-							<div class="media">
-								<a class="pull-left load-video" href="#" name="video3"><img class="media-object" data-src="holder.js/100x100" alt="image"></a>
-								<div class="media-body">
-									<h4 class="media-heading"><a href="#" class="load-video" name="video3">Video 3</a></h4>
-									 <p>Lorem ipsum Ex pariatur enim eu sed quis occaecat enim ex eiusmod</p>
-								</div>
-							</div>
-
-							<div class="media">
-								<a class="pull-left" href="#"><img class="media-object" data-src="holder.js/100x100" alt="image"></a>
-								<div class="media-body">
-									<h4 class="media-heading"><a href="#">Video 4</a></h4>
-									 <p>Lorem ipsum Ex pariatur enim eu sed quis occaecat enim ex eiusmod</p>
-								</div>
-							</div>
-
-							<div class="media">
-								<a class="pull-left" href="#"><img class="media-object" data-src="holder.js/100x100" alt="image"></a>
-								<div class="media-body">
-									<h4 class="media-heading"><a href="#">Video 5</a></h4>
-									 <p>Lorem ipsum Ex pariatur enim eu sed quis occaecat enim ex eiusmod</p>
-								</div>
-							</div>
-
-							<div class="media">
-								<a class="pull-left" href="#"><img class="media-object" data-src="holder.js/100x100" alt="image"></a>
-								<div class="media-body">
-									<h4 class="media-heading"><a href="#">Video 6</a></h4>
-									 <p>Lorem ipsum Ex pariatur enim eu sed quis occaecat enim ex eiusmod</p>
-								</div>
-							</div>
 						</div>
-					</div>
-				</div>
+			 		</div>
+			 </div>
+			 <!-- END OF INSTRUCTOR -->
 
-				<div class="col-md-7">
-					<section class="media-content">
-						<h2 class="lead">Video 1</h2>
-						<video id="vid2" src="" class="video-js vjs-default-skin" controls 
-           		 		preload="auto" width="640" height="360" 
-          		 		data-setup='{ "techOrder": ["youtube"], "src": "http://youtu.be/aOl4oeHZnBk", "ytcontrols": true }'>
-    					</video>
-    					<p>Lorem ipsum Ex pariatur enim eu sed quis occaecat enim ex eiusmod</p>
-					</section>
-				</div>
-			</div>		
-		</section>
+			 	<!-- CONTACT US -->
+			 	<div class="container">
+			 		<h2 class="centered content-heading">Contact Us</h2>
 
-		<!--Contact section-->
-		<section id="contact">
-			<h2 class="centered content-heading">Contact Dan's Music Studio</h2>
-
-			<div class="container">
-				<div class="row">
+			 		<div class="row">
 			 			<div class="col-md-8">
 			 				<h3>Leave Us A Message</h3>
-		   					<h5>We will get back to you as soon as possible. We Promise!</h5>
+		   					<p>We will get back to you as soon as possible. We Promise!</p>
 		    				
 		    				<form role="form" method="POST" action="">
 		    					<div class="row">
@@ -377,11 +549,9 @@
 			 				<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=49+Mt+Pleasant+Ave,+West+Orange,+NJ&amp;aq=0&amp;oq=49+Mt+Pleasant+Ave,+West+Orange,+NJ&amp;sll=40.697488,-73.979681&amp;sspn=0.562237,1.352692&amp;ie=UTF8&amp;hq=&amp;hnear=49+Mt+Pleasant+Ave,+West+Orange,+New+Jersey+07052&amp;t=m&amp;ll=40.793084,-74.235306&amp;spn=0.035089,0.084543&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
 						  </div>
 			 		</section>
-				</div>	
-			</div>
+				</div>			 
 		</section>
 
-		<!--Footer stuff -->
 		<aside id="footer-widgets">
 			<div class="container">
 					<div class="row">
@@ -426,19 +596,37 @@
 					</div>
 			</div>
 		</aside>
+	</div>
+
 		<!-- Javascript stuff -->
 		<script src="js/jquery-1.11.0.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/holder.js"></script>
 
-		<!-- Video.js -->
-		<script src="js/videojs/video.js"></script>
-		<script src="js/videojs/vjs.youtube.js"></script>
-		<script>
-			videojs.options.flash.swf = "js/videojs/video-js.swf";
-		</script>	
+		<script type="text/Javascript">
+			$(document).ready(function() {
 
-		<!-- Custom.js -->
-		<script src="js/custom.js"></script>	
-	</body>
-</html>
+			$('[data-toggle="popover"]').popover({
+						container: 'body', 
+						placement:'auto left', 
+						content: function() {
+							return $(this).next('.bio').html();
+						},
+						trigger: 'click',
+						html:true,
+			});
+			
+			$('.popoverThis').click(function (e) {
+    			e.stopPropagation();
+			});
+
+			$(document).click(function (e) {
+    			if (($('.popover').has(e.target).length == 0) || $(e.target).is('.close')) {
+        			$('.popoverThis').popover('hide');
+        			$('.popover').remove();
+    			}
+			});
+			
+		});
+		</script>	
+</body>
